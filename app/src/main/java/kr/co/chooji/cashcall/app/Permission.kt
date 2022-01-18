@@ -1,4 +1,4 @@
-package kr.co.chooji.cashcall.common
+package kr.co.chooji.cashcall.app
 
 import android.app.Activity
 import android.content.pm.PackageManager
@@ -6,6 +6,9 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
+/**
+ * 퍼미션 권한 체크
+ */
 class Permission {
 
     companion object{

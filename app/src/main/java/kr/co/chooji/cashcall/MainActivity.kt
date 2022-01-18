@@ -1,11 +1,8 @@
 package kr.co.chooji.cashcall
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.CallLog
-import android.util.Log
-import kr.co.chooji.cashcall.common.Permission
-import java.lang.Exception
+import androidx.appcompat.app.AppCompatActivity
+import kr.co.chooji.cashcall.app.Permission
 
 class MainActivity : AppCompatActivity(){
 
@@ -16,9 +13,6 @@ class MainActivity : AppCompatActivity(){
         Permission(this)
     }
 
-    /**
-     * 퍼미션 권한 체크
-     */
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 

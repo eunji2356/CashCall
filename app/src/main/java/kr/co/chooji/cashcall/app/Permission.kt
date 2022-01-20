@@ -13,16 +13,15 @@ class Permission {
 
     companion object{
         const val PERMISSION_CODE = 1
+        lateinit var  activity: Activity
     }
-
-    private lateinit var activity: Activity
 
     private val PERMISSIONS = arrayOf(
         android.Manifest.permission.READ_CALL_LOG
     )
 
-    constructor(activity: Activity){
-        this.activity = activity
+    constructor(getActivity: Activity){
+        activity = getActivity
         reqPermissions()
     }
 
